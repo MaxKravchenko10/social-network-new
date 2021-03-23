@@ -1,0 +1,17 @@
+h1 {
+    color: yellowgreen;
+    font-family: "Comic Sans MS";
+}
+
+.header > img {
+    width: 90px;
+    height: 90px;
+    margin-left: 25px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-area: h;
+    background-color: black;
+}
