@@ -13,7 +13,7 @@
   background-color: aquamarine;
 }
 
-.content {
+.app-wrapper-content {
   grid-area: c;
   background-color: aquamarine;
 }

@@ -4,7 +4,7 @@ import MyPosts from "./MyPosts/MyPosts";
 
 const ProfileComponent = () => {
     return (
-        <div className={Profile.content}>
+        <div>
             <img src="https://i.ytimg.com/vi/Mg_T7uty98A/maxresdefault.jpg" alt="meditation"/>
             <div>Avatar + description</div>
             <MyPosts />

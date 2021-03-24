@@ -4,16 +4,22 @@ import Header from './components/Header/Header'
 import Nav from "./components/Nav/Nav";
 import ProfileComponent from "./components/Profile/ProfileComponent";
 import Dialogs from './components/Dialogs/Dialogs';
+import {BrowserRouter, Route} from 'react-router-dom';
 
-function App() {
-    // @ts-ignore
+
+const App = () => {
     return (
+        //создаем роутинг, чтобы компонента роут жила, нужно сделать обрамление компонентой BrowserRouter
+        <BrowserRouter>
         <div className="app-wrapper">
-            <Header />
-            <Nav />
-            <ProfileComponent />
-            <Dialogs />
+            <Header/>
+            <Nav/>
+            <div className="app-wrapper-content">
+                <Route path='/ProfileComponent' component={ProfileComponent}/>
+                <Route path='/Dialogs' component={Dialogs}/>
+            </div>
         </div>
+        </BrowserRouter>
     );
 }
 
